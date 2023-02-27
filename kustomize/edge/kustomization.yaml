@@ -4,7 +4,7 @@ metadata:
   name: mytbedge
   namespace: flux-system
 spec:
-  interval: 15m
+  interval: 60s
   path: "./kustomize/edge"
   prune: true
   sourceRef:
