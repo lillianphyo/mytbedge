@@ -1,5 +1,7 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
+metadata:
+  name: mytbedge
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
