@@ -3,10 +3,7 @@ kind: Kustomization
 metadata:
   name: mytbedge
   namespace: flux-system
-spec:
-  interval: 60s
-  path: "./kustomize/edge"
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: mytbedge
+resources:
+  - service.yaml
+  - deployment.yaml
+  - hpa.yaml
