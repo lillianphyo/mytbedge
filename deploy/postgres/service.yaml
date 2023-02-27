@@ -8,7 +8,6 @@ metadata:
   labels:
     io.kompose.service: postgres
   name: postgres
-  namespace: flux-system
 spec:
   ports:
     - name: "5432"

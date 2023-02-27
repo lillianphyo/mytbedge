@@ -8,7 +8,6 @@ metadata:
   labels:
     io.kompose.service: mytbedge
   name: mytbedge
-  namespace: flux-system
 spec:
   ports:
     - name: "8080"
