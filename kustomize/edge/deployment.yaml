@@ -53,7 +53,7 @@ spec:
               protocol: UDP
           resources: 
             limits: 
-              cpu: "1500m"
+              cpu: "700m"
               memory: "256Mi"
             request:
               cpu: "500m"
