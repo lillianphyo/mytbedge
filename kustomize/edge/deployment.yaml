@@ -27,13 +27,13 @@ spec:
       containers:
         - env:
             - name: CLOUD_ROUTING_KEY
-              value: d29eb78e-b166-3b1a-4c28-5dc0e3ff42bd
+              value: 106e4527-7ee0-d452-e4e3-23be0ae519f5
             - name: CLOUD_ROUTING_SECRET
-              value: enk23p3s4dhsicptag8j
+              value: d4xzkygs5c1656874f9n
             - name: CLOUD_RPC_HOST
               value: demo.thingsboard.io
             - name: SPRING_DATASOURCE_URL
-              value: jdbc:postgresql://postgres.flux-system.svc.kcluster.myanmarapn.com:5432/tb-edge
+              value: jdbc:postgresql://postgres.regiona.svc.kcluster.myanmarapn.com:5432/tb-edge
           image: thingsboard/tb-edge:3.4.3EDGE
           name: mytbedge
           ports:
@@ -54,8 +54,8 @@ spec:
           resources: 
             limits: 
               cpu: "700m"
-              memory: "256Mi"
+              memory: "512Mi"
             request:
               cpu: "500m"
-              memory: "128Mi"
+              memory: "256Mi"
       restartPolicy: Always

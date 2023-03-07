@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sensor12
+  name: edge-sensor12
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sensor12
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sensor12
+    spec:
+      containers:
+        - name: sensor12
+          image: 270596/evn_img:latest
+          env:
+          - name: token
+            value: 'oFGyKt2nZgBJPkSOwbTW'
+          - name: host
+            value: 'demo.thingsboard.io'
+          - name: port
+            value: '1883'
+
+      restartPolicy: Always
+status: {}

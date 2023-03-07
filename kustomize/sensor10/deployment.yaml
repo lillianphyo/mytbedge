@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sensor10
+  name: edge-sensor10
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sensor10
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sensor10
+    spec:
+      containers:
+        - name: sensor10
+          image: 270596/evn_img:latest
+          env:
+          - name: token
+            value: '2q5nt4rOaKCadp2dzWWo'
+          - name: host
+            value: 'demo.thingsboard.io'
+          - name: port
+            value: '1883'
+
+      restartPolicy: Always
+status: {}

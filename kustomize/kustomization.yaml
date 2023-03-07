@@ -4,3 +4,23 @@ spec:
 resources:
     - ./kustomize/edge
     - ./kustomize/postgres
+    - ./kustomize/sensor01
+    - ./kustomize/sensor02
+    - ./kustomize/sensor03
+    - ./kustomize/sensor04
+    - ./kustomize/sensor05
+    - ./kustomize/sensor06
+    - ./kustomize/sensor07
+    - ./kustomize/sensor08
+    - ./kustomize/sensor09
+    - ./kustomize/sensor10
+    - ./kustomize/sensor11
+    - ./kustomize/sensor12
+    - ./kustomize/sensor13
+    - ./kustomize/sensor14
+    - ./kustomize/sensor15
+    - ./kustomize/sensor16
+    - ./kustomize/sensor17
+    - ./kustomize/sensor18
+    - ./kustomize/sensor19
+    - ./kustomize/sensor20
