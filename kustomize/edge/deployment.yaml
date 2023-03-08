@@ -53,9 +53,9 @@ spec:
               protocol: UDP
           resources: 
             limits: 
-              cpu: "700m"
-              memory: "512Mi"
-            request:
               cpu: "500m"
               memory: "256Mi"
+            request:
+              cpu: "250m"
+              memory: "128Mi"
       restartPolicy: Always
