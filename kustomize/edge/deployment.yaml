@@ -16,6 +16,15 @@ spec:
       io.kompose.service: mytbedge
   strategy:
     type: Recreate
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: geol
+            operator: In
+            values:
+            - regiona
   template:
     metadata:
       annotations:
