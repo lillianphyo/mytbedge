@@ -8,6 +8,7 @@ metadata:
   labels:
     io.kompose.service: mytbedge
   name: mytbedge
+  namespace: regiona
 spec:
   replicas: 1
   selector:
@@ -53,9 +54,9 @@ spec:
               protocol: UDP
           resources: 
             limits: 
-              cpu: "500m"
-              memory: "128Mi"
+              cpu: "2000m"
+              memory: "2048Mi"
             request:
-              cpu: "250m"
-              memory: "64Mi"
+              cpu: "1800m"
+              memory: "1434Mi"
       restartPolicy: Always
