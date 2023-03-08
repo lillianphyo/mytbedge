@@ -56,7 +56,4 @@ spec:
             limits: 
               cpu: "2000m"
               memory: "2048Mi"
-            request:
-              cpu: "1800m"
-              memory: "1434Mi"
       restartPolicy: Always
