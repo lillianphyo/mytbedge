@@ -6,9 +6,9 @@ metadata:
     kompose.version: 1.26.0 (40646f47)
   creationTimestamp: null
   labels:
+    layer: edge
     io.kompose.service: mytbedge
   name: mytbedge
-  namespace: regiona
 spec:
   replicas: 1
   selector:
@@ -23,6 +23,7 @@ spec:
         kompose.version: 1.26.0 (40646f47)
       creationTimestamp: null
       labels:
+        layer: edge
         io.kompose.service: mytbedge
     spec:
       affinity:

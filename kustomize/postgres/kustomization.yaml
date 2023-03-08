@@ -3,7 +3,8 @@ kind: Kustomization
 metadata:
   name: postgres
   namespace: flux-system
+  labels:
+    layer: edge
 resources:
   - service.yaml
   - deployment.yaml
-  - hpa.yaml
