@@ -3,24 +3,24 @@ kind: Kustomization
 spec:
 resources:
     - ./kustomize/edge
-    - ./kustomize/postgres
-    - ./kustomize/sensor01
-    - ./kustomize/sensor02
-    - ./kustomize/sensor03
-    - ./kustomize/sensor04
-    - ./kustomize/sensor05
-    - ./kustomize/sensor06
-    - ./kustomize/sensor07
-    - ./kustomize/sensor08
-    - ./kustomize/sensor09
-    - ./kustomize/sensor10
-    - ./kustomize/sensor11
-    - ./kustomize/sensor12
-    - ./kustomize/sensor13
-    - ./kustomize/sensor14
-    - ./kustomize/sensor15
-    - ./kustomize/sensor16
-    - ./kustomize/sensor17
-    - ./kustomize/sensor18
-    - ./kustomize/sensor19
-    - ./kustomize/sensor20
+    - ./kustomize/cloud-postgres
+    - ./kustomize/cloud-sensor01
+    - ./kustomize/cloud-sensor02
+    - ./kustomize/cloud-sensor03
+    - ./kustomize/cloud-sensor04
+    - ./kustomize/cloud-sensor05
+    - ./kustomize/cloud-sensor06
+    - ./kustomize/cloud-sensor07
+    - ./kustomize/cloud-sensor08
+    - ./kustomize/cloud-sensor09
+    - ./kustomize/cloud-sensor10
+    - ./kustomize/cloud-sensor11
+    - ./kustomize/cloud-sensor12
+    - ./kustomize/cloud-sensor13
+    - ./kustomize/cloud-sensor14
+    - ./kustomize/cloud-sensor15
+    - ./kustomize/cloud-sensor16
+    - ./kustomize/cloud-sensor17
+    - ./kustomize/cloud-sensor18
+    - ./kustomize/cloud-sensor19
+    - ./kustomize/cloud-sensor20

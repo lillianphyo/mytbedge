@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    layer: cloud
+    app: cloud-sensor15
+  name: cloud-sensor15
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      layer: cloud
+      app: cloud-sensor15
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        layer: cloud
+        app: cloud-sensor15
+    spec:
+      containers:
+        - name: cloud-sensor15
+          image: 270596/evn_img:latest
+          env:
+          - name: token
+            value: 'VaY1ZVdm7FSSikj7ps2T'
+          - name: host
+            value: 'demo.thingsboard.io'
+          - name: port
+            value: '1883'
+
+      restartPolicy: Always
+status: {}
