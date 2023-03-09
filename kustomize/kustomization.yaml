@@ -24,3 +24,25 @@ resources:
     - ./kustomize/cloud-sensor18
     - ./kustomize/cloud-sensor19
     - ./kustomize/cloud-sensor20
+    - ./kustomize/edge-sensor01
+    - ./kustomize/edge-sensor02
+    - ./kustomize/edge-sensor03
+    - ./kustomize/edge-sensor04
+    - ./kustomize/edge-sensor05
+    - ./kustomize/edge-sensor06
+    - ./kustomize/edge-sensor07
+    - ./kustomize/edge-sensor08
+    - ./kustomize/edge-sensor09
+    - ./kustomize/edge-sensor10
+    - ./kustomize/edge-sensor11
+    - ./kustomize/edge-sensor12
+    - ./kustomize/edge-sensor13
+    - ./kustomize/edge-sensor14
+    - ./kustomize/edge-sensor15
+    - ./kustomize/edge-sensor16
+    - ./kustomize/edge-sensor17
+    - ./kustomize/edge-sensor18
+    - ./kustomize/edge-sensor19
+    - ./kustomize/edge-sensor20
+
+
