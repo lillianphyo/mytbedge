@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    layer: edge
+    app: edge-sensor11
+  name: edge-sensor11
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      layer: edge
+      app: edge-sensor11
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        layer: edge
+        app: edge-sensor11
+    spec:
+      containers:
+        - name: edge-sensor11
+          image: 270596/evn_img:latest
+          env:
+          - name: token
+            value: 'Y2JVmlLOK7EyZudmQNkE'
+          - name: host
+            value: 'mytbedge.regiona.svc.kcluster.myanmarapn.com'
+          - name: port
+            value: '1883'
+
+      restartPolicy: Always
+status: {}
