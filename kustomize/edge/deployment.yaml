@@ -38,9 +38,9 @@ spec:
       containers:
         - env:
             - name: CLOUD_ROUTING_KEY
-              value: 106e4527-7ee0-d452-e4e3-23be0ae519f5
+              value: bd0b2a60-eedf-6900-e5ba-d3cb2e09b9dd
             - name: CLOUD_ROUTING_SECRET
-              value: d4xzkygs5c1656874f9n
+              value: 14kkmnmy7jscec8m0u2m
             - name: CLOUD_RPC_HOST
               value: demo.thingsboard.io
             - name: SPRING_DATASOURCE_URL
